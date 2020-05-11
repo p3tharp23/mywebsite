@@ -1,0 +1,38 @@
+<html>
+    <head> 
+    <script language="javaScript">
+    
+    function move()
+    { 
+        var left = document.all.guy.style.left;
+        left = parseInt(left);
+        left = left + 5;
+        
+        if (left >825 )
+            left = 5;
+        
+        document.all.guy.style.left = left;
+        
+        var timer = setTimeout("move()", 50)
+        
+    }
+        
+    </script>    
+        
+    </head>
+    <body> 
+        <center> 
+        <h1> Mini animation </h1>
+        <input type="button" value="start" onClick="move()"/>
+        
+        <div id="background" style="position:absolute; left:50; top:100">
+            <img src="images/backdrop1.jpg" width="800"/>
+        </div>
+            
+        <div id="guy" style="position:absolute; left:25; top:450;">
+            <img src="images/walking.gif" width="200"/>
+        </div>
+            
+        </center>
+    </body>
+</html>

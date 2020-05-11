@@ -1,0 +1,37 @@
+<html>
+<head>
+    <body bgcolor = "#LLLLFF">
+<font face="Trebuchet" color="white">
+
+<center>
+<h1> My JavaScript Website </h1>
+
+</center>
+Hello there!
+
+
+</font>
+
+<script language = "JavaScript">
+    
+    function rollIn(daImage)
+{
+	daImage.src="images/roll2.jpg";
+}
+
+    function rollOut(daImage)
+{
+	daImage.src="images/roll1.jpg";
+}
+
+</script>
+</head>
+<body>
+<center>
+<br/> <br/> <br/> <br/>   
+<img src="images/roll1.jpg" width = 400 onmouseout="rollOut(this)" onmouseover="rollIn(this)"/>
+Click here <a href="index.html">for a index.</a>
+</body>
+</html>
+
+
